@@ -12,8 +12,6 @@ class  db_consulta():
             database = Sq.connect('dm.db')
             cursor = database.execute(sql)
             database.commit()
-
-          9066666
             database.close()
 
             return   f"{cursor.rowcount} registro(s) inserido(s)."
